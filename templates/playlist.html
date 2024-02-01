@@ -1,0 +1,11 @@
+{% extends 'layout.html'%}
+
+{%block content %}
+<div>
+    {% for datas in data %}
+    <p>{{datas['name']}}</p>
+    <image src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000bebb588de94ab2c51f0c677e7a55"></image>
+    <!-- <p>{{data['name']}}</p> -->
+    {% endfor %}
+</div>
+{% endblock content %}

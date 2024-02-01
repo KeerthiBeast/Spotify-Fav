@@ -1,0 +1,26 @@
+<html lang="en">
+    <head>
+
+    </head>
+
+    <body>
+
+        <table>
+
+            <tbody>
+
+                    {% for val in data %}
+                <tr>
+                    <td> <img src="{{val['album']['images'][2]['url']}}"></td> 
+                    <td>{{ val['album']['name'] }}</td>
+                    <td>{{ val['artists'][0]['name'] }}</td> 
+                </tr>
+                   {% endfor %}
+                   
+            </tbody>
+
+        </table>
+
+    </body>
+
+</html>
